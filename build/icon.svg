@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Dark rounded square background -->
+  <rect width="256" height="256" rx="48" fill="#0d1117"/>
+  <rect width="256" height="256" rx="48" fill="none" stroke="#30363d" stroke-width="4"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="40" y1="180" x2="216" y2="180" stroke="#21262d" stroke-width="1.5"/>
+  <line x1="40" y1="140" x2="216" y2="140" stroke="#21262d" stroke-width="1.5"/>
+  <line x1="40" y1="100" x2="216" y2="100" stroke="#21262d" stroke-width="1.5"/>
+
+  <!-- Chart line — upward trend with dip and recovery -->
+  <polyline
+    points="40,170 72,160 96,172 120,130 148,110 176,90 204,56"
+    fill="none"
+    stroke="#58a6ff"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Glow area under chart line -->
+  <polygon
+    points="40,170 72,160 96,172 120,130 148,110 176,90 204,56 204,200 40,200"
+    fill="url(#grad)"
+    opacity="0.35"
+  />
+
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Small dot at the peak -->
+  <circle cx="204" cy="56" r="7" fill="#58a6ff"/>
+
+  <!-- BTC symbol - compact, bottom right area -->
+  <text x="198" y="220" font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="#484f58" text-anchor="middle">BTC</text>
+</svg>
